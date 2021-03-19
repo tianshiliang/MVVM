@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实现mvvm双向绑定小轮子</title>
+</head>
+<body>
+    <div id="app">
+        <form>
+            <p>姓名：<input type="text" v-model="name"></p>
+            <p>年龄：<input type="text" v-model="age"></p>
+        </form>
+        <div>
+            <h1>{{name}}</h1>
+            <h2>{{age}}</h2>
+            <span>{{name}}</span>
+            <label>{{age}}</label>
+        </div>
+    </div>
+</body>
+</html>
+<script src="MVVM.js"></script>
+<script>
+   var app = new MVVM({
+       el:'#app',
+       data: {
+         name:'小亮',
+         age:30
+       }
+   })
+</script>
