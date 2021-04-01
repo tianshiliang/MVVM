@@ -1,3 +1,9 @@
+/**
+ * 1、app.message修改数据。vue内部如何监听message数据的改变
+ * Object.defineProperty->监听对象属性的改变
+ * 2、当数据发生改变，vue如何知道要通知哪些人，界面发生刷新
+ * 发布者订阅者模式（订阅属性的改变）
+ */
 class MVVM{
     constructor(params) {
         var app = document.querySelector(params.el);
